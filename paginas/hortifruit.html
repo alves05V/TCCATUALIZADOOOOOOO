@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CCSS/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../imagens/rodape/B E ICONS.png" alt="Logo">
+        <div class="search-bar">
+            <input type="text" id="searchInput" oninput="searchProducts()" placeholder="Pesquisar produtos...">
+            <a href="#" style="color: white; margin-left: 15px;"><i class="fas fa-user"></i></a>
+            <div class="cart-dropdown" style="color: white; margin-left: 15px;">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-dropdown-content" id="cart-content">
+                    <!-- Items adicionados ao carrinho aparecerão aqui -->
+                </div>
+                <div class="cart-total" id="cart-total">Total: R$ 0,00</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="nav">
+
+        <div class="dropdown">
+            <a href="#" style="margin-left: 50px;">Todos Departamentos <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../index.html">Página Inicial</a>
+                <a href="./Adega e bebidas.html">Bebidas</a>
+                <a href="./Guloseimas.html">Guloseimas</a>
+                <a href="./Alimento.html">Alimentos Básicos</a>
+                <a href="./higiene.html">Higiene/Produtos de Limpeza</a>
+
+            </div>
+        </div>
+        <button class="whatsapp-button" onclick="sendWhatsAppMessage()">Enviar pedido via WhatsApp</button>
+    </div>
+    <div class="content">
+        <!-- Seção de produtos - Vegetais -->
+        <div class="product-section">
+            <h2>Frutas</h2>
+            <!--CIMA-->
+            <div class="product-area">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/abacate.jpg" alt="Cenoura">
+                        <h3>Abacate </h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 7,99</p>
+                        <button onclick="addToCart('Abacate', 7,99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/abacaxi-perola-carrefour-1-unidade-1.webp" alt="Cenoura">
+                        <h3>Abacaxi</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 7,89</p>
+                        <button onclick="addToCart('Abacaxi', 7.89)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/bananananica.jpg" alt="Cenoura">
+                        <h3>Banana Nanica</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 10,49</p>
+                        <button onclick="addToCart('Banana Nanica', 10,49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/limao-siciliano--aprox.webp" alt="Cenoura">
+                        <h3>Limão Siciliano</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 19,99/kg</p>
+                        <button onclick="addToCart('Limão Siciliano', 19,99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/maracuja-azedo-aprox.webp" alt="Cenoura">
+                        <h3>Maracujá Azedo</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 9,99/kg</p>
+                        <button onclick="addToCart('Maracujá Azedo', 9.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/manga-palmer-aprox.webp" alt="Cenoura">
+                        <h3>Manga Palmer</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 13,99/kg</p>
+                        <button onclick="addToCart('Manga Palmer', 13.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/uvathompson.jpg" alt="Cenoura">
+                        <h3>Uva Verde</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 16,50</p>
+                        <button onclick="addToCart('Uva Verde', 16.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/uvaescura.webp" alt="Cenoura">
+                        <h3>Uva Sem Semente</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 14,20</p>
+                        <button onclick="addToCart('Uva Sem Semente', 14.20)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/mexerica-importada-do-uruguai-aprox.webp" alt="Cenoura">
+                        <h3>Mexerica</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 12,99/kg</p>
+                        <button onclick="addToCart('Mexerica', 12.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/melao-redinha-famosa-aprox-2-kg-1.webp" alt="Cenoura">
+                        <h3>Melão</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 15,50/kg</p>
+                        <button onclick="addToCart('Melão', 15.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/melancia-pingo-doce-aprox-6-kg-1.webp" alt="Cenoura">
+                        <h3>Melancia</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 20,50/kg</p>
+                        <button onclick="addToCart('Melancia', 20.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/kiwi.jpg" alt="Cenoura">
+                        <h3>Kiwi</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 20,99/kg</p>
+                        <button onclick="addToCart('Kiwi', 20.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/mamao.jpg" alt="Cenoura">
+                        <h3>Mamão</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 9,49</p>
+                        <button onclick="addToCart('Mamão', 9.49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/maçaverde.jpg" alt="Cenoura">
+                        <h3>Maçã Verde</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 12,49</p>
+                        <button onclick="addToCart('Maçã Verde', 12.49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/coco-seco-inteiro-carrefour-aprox-800-g-1.webp" alt="Cenoura">
+                        <h3>Coco Seco</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 4,49</p>
+                        <button onclick="addToCart('Coco Seco', 4.49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/maxixe.webp" alt="Cenoura">
+                        <h3>Maxixe</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 6,93</p>
+                        <button onclick="addToCart('Maxixe', 6.93)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <!--CIMA-->
+            <!--BAIXO-->
+            <div class="product-area">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/pera-willians-aprox.webp" alt="Cenoura">
+                        <h3>Pera Willians</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 19,90/kg</p>
+                        <button onclick="addToCart('Pera Willians', 19.90)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/maca-rede-importada-aprox.webp" alt="Cenoura">
+                        <h3>Maçã Rede Importada</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 10.19/kg</p>
+                        <button onclick="addToCart('Maçã Rede', 10.19)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/peraportuguesa.jpg" alt="Cenoura">
+                        <h3>Pera Portuguesa </h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 15,94/kg</p>
+                        <button onclick="addToCart('Pera Portuguesa', 15.94)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/maca-gala.webp" alt="Cenoura">
+                        <h3>Maçã Gala</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 13,49/kg</p>
+                        <button onclick="addToCart('Maçâ Gala', 13.49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/laranja-pera--aprox.webp" alt="Cenoura">
+                        <h3>Laranja Pera</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 7,99/kg</p>
+                        <button onclick="addToCart('Laranja Pera', 7.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/139872-carambola-organica-unidade.webp" alt="Cenoura">
+                        <h3>Carambola</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 5,49</p>
+                        <button onclick="addToCart('Carambola', 5.49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/limao.jpeg" alt="Cenoura">
+                        <h3>Limão</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 4,49/kg</p>
+                        <button onclick="addToCart('Limão', 4.49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/hortifruti/morango.jpg" alt="Cenoura">
+                        <h3>Morango</h3>
+                        <p>Por Unidade</p>
+                        <p>R$ 4,49</p>
+                        <button onclick="addToCart('Moramgo', 4.49)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <!-- Seção de produtos - Vegetais -->
+                <div class="product-section">
+                    <h2>Legumes</h2>
+                    <!--CIMA-->
+                    <div class="product-area">
+                        <div class="product-row">
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/alho.jpeg" alt="Cenoura">
+                                <h3>Alho </h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 29,95/kg</p>
+                                <button onclick="addToCart('Alho', 29,95)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/batata-monalisa-carrefour-aprox.webp" alt="Cenoura">
+                                <h3>Batata</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 11,13/kg</p>
+                                <button onclick="addToCart('Batata', 11.13)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/cebola-carrefour-aprox.webp" alt="Cenoura">
+                                <h3>Cebola</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 5,29/kg</p>
+                                <button onclick="addToCart('Cebola', 5,29)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/cenoura-carrefour-aprox.webp" alt="Cenoura">
+                                <h3>Cenoura</h3>
+                                <p> Por Unidade</p>
+                                <p>R$ 6,00/kg</p>
+                                <button onclick="addToCart('Cenoura', 6.00)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/chuchu-.webp" alt="Cenoura">
+                                <h3>Chuchu</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 7,94/kg</p>
+                                <button onclick="addToCart('Chuchu', 7.94)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/tomate.jpeg" alt="Cenoura">
+                                <h3>Tomate</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 6,77/kg</p>
+                                <button onclick="addToCart('Tomate', 6.77)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/abobora.webp" alt="Cenoura">
+                                <h3>Abóbora</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 6,99</p>
+                                <button onclick="addToCart('Abóbora', 6.99)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/alface-crespa-jfc-und-1.webp" alt="Cenoura">
+                                <h3>Alface Crespa</h3>
+                                <p>Aprox. 500g</p>
+                                <p>R$ 6,49</p>
+                                <button onclick="addToCart('Alface Crespa', 6.49)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/batata-doce-roxa-carrefour-aprox.webp" alt="Cenoura">
+                                <h3>Batata Doce</h3>
+                                <p>Aprox. 500g</p>
+                                <p>R$ 8,99</p>
+                                <button onclick="addToCart('Batata Doce', 8.99)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/berinjela-aprox.webp" alt="Cenoura">
+                                <h3>Berinjela</h3>
+                                <p>Aprox. 500g</p>
+                                <p>R$ 25,50</p>
+                                <button onclick="addToCart('Berinjela', 25.50)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/abobrinha-italiana-carrefour-aprox.webp" alt="Cenoura">
+                                <h3>Abobrinha Italiana</h3>
+                                <p>Aprox. 500g</p>
+                                <p>R$ 12,49</p>
+                                <button onclick="addToCart('Abobrinha Italiana', 12.49)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/pepino-japones-carrefour-aprox.webp" alt="Cenoura">
+                                <h3>Pepimo Japonês</h3>
+                                <p>Aprox. 500g</p>
+                                <p>R$ 4,49</p>
+                                <button onclick="addToCart('Pepino Japonês', 4.49)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/inhame-carrefour-aprox.webp" alt="Cenoura">
+                                <h3>Inhame</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 9,99/kg</p>
+                                <button onclick="addToCart('Inhame', 9.99)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/gengibre.jpg" alt="Cenoura">
+                                <h3>Gengibre</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 10,49/kg</p>
+                                <button onclick="addToCart('Gengibre', 10.49)">Adicionar ao Carrinho</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--CIMA-->
+                    <!--BAIXO-->
+                    <div class="product-area">
+                        <div class="product-row">
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/pimentaomisto.jpg" alt="Cenoura">
+                                <h3>Pimentão Misto</h3>
+                                <p>Aprox. 500g</p>
+                                <p>R$ 8,49</p>
+                                <button onclick="addToCart('Pimentão Misto', 8.49)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/repolho-liso-fresco-inteiro-carrefour-aproximadamente-15-kg-1.webp"
+                                    alt="Cenoura">
+                                <h3>Repolho Liso</h3>
+                                <p>Aprox. 500g</p>
+                                <p>R$ 10.19</p>
+                                <button onclick="addToCart('Repolho Liso', 10.19)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/beterraba-carrefour-500-g-1.webp" alt="Cenoura">
+                                <h3>Beterraba</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 10,94/kg</p>
+                                <button onclick="addToCart('Beterraba', 10.94)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/manjericão.jpg" alt="Cenoura">
+                                <h3>Manjericão</h3>
+                                <p>Aprox 600 g</p>
+                                <p>R$ 8,89</p>
+                                <button onclick="addToCart('Manjericão', 8.89)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/shitake.jpg" alt="Cenoura">
+                                <h3>Shitake</h3>
+                                <p>Aprox. 1Kg</p>
+                                <p>R$ 15,29</p>
+                                <button onclick="addToCart('Shitake', 15.29)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/couveflor.jpg" alt="Cenoura">
+                                <h3>Couve-Flor</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 14,49/kg</p>
+                                <button onclick="addToCart('Couve-Flor', 14.49)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/hortifruti/quiabo.jpg" alt="Cenoura">
+                                <h3>Quiabo</h3>
+                                <p>Por Unidade</p>
+                                <p>R$ 4,49</p>
+                                <button onclick="addToCart('Quiabo', 4.49)">Adicionar ao Carrinho</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <main class="rodape">
+                    <div class="footer">
+                        <div class="footer-logo">
+                            <img src="../imagens/rodape/B.png" alt="Barbosa">
+                            <p> Mercadinho do Barbosa</p>
+                        </div>
+                        <div class="footer-columns">
+                            <div class="footer-column">
+                                <h3>Formas de Pagamento:</h3>
+                                <img src="../Footer/4.png" alt="Cartão de Crédito">
+                                <img src="../Footer/5.png" alt="Cartão de Débito">
+                                <img src="../Footer/6.png" alt="Pix">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-column">
+                            <h3> Nossas Redes Sociais </h3>
+                            <a href="https://www.instagram.com/mercadinho._barbosa/"><img src="../Footer/insta.png"
+                                    alt="Instagram"></a>
+                            <a href="#"><img src="../Footer/2.png" alt="LinkedIn"></a>
+                        </div>
+                        <div class="footer-payment">
+                        </div>
+
+                        <div class="footer-bottom">
+                            <p>© Direitos reservados para os Alunos do IOS 2024 | Heitor Alves | Guilherme Pereira |
+                                Miguel Froes ©</p>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.825490900554!2d-46.707302323881265!3d-23.646419864724187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ff29401f01%3A0x4a3f6ef895f0119e!2sNURAP!5e0!3m2!1spt-BR!2sbr!4v1719187314681!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </main>
+                <script src="../script.js"></script>
+</body>
+
+</html>

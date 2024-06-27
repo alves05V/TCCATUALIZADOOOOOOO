@@ -1,0 +1,494 @@
+@import url(alimento.css);
+@import url(Adega\ e\ bebidas.css);
+
+
+
+/* Adicione estilos CSS personalizados aqui */
+@media only screen and (max-width: 768px) {
+
+    /* Estilos para dispositivos móveis */
+    .promo {
+        flex-wrap: wrap;
+    }
+
+    .promo-item {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .search-bar {
+        text-align: center;
+        /* Centralizar a barra de pesquisa */
+    }
+
+    .search-bar input[type="text"] {
+        width: 70%;
+        /* Ajuste conforme necessário */
+    }
+
+    .search-bar button {
+        width: 30%;
+        /* Ajuste conforme necessário */
+    }
+}
+
+.header {
+    padding-bottom: 20px;
+    /* Espaçamento inferior para a barra de pesquisa */
+}
+
+.search-bar {
+    text-align: center;
+    /* Centralizar a barra de pesquisa */
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    /* Ajuste conforme necessário */
+    padding: 10px;
+    /* Ajuste conforme necessário */
+    border-radius: 5px;
+    /* Borda arredondada */
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    font-size: 16px;
+    /* Tamanho da fonte */
+}
+
+.search-bar button {
+    width: 20%;
+    /* Ajuste conforme necessário */
+    padding: 10px;
+    /* Ajuste conforme necessário */
+    border-radius: 5px;
+    /* Borda arredondada */
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    background-color: #f8f8f8;
+    /* Cor de fundo */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+}
+
+.product-section {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.product-section h2 {
+    margin-bottom: 20px;
+}
+
+.product-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-item img {
+    width: 90%;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    background-color: #29abe2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #4DA8BF;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: #020f59;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 1rem;
+
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.header img {
+    width: 40px;
+}
+
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    /* Aumentei a margem direita para dar mais espaço */
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 300px;
+    /* Aumentei a largura para dar mais espaço para a pesquisa */
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav {
+    background-color: #29abe2;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav a {
+    margin: 5px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cart-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.cart-dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-dropdown-content div:hover {
+    background-color: #ddd;
+}
+
+.cart-dropdown:hover .cart-dropdown-content {
+    display: block;
+    position: fixed;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.promo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 80%;
+    overflow-x: auto;
+}
+
+.promo-item {
+    text-align: center;
+    margin: 10px;
+    flex-basis: calc(20% - 20px);
+    max-width: calc(20% - 20px);
+}
+
+.promo-item img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.promo-item button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #58C4D9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.whatsapp-button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 70%;
+    position: fixed;
+
+}
+
+.whatsapp-button:hover {
+    background-color: darkgreen;
+}
+
+.footer {
+    background-color: #003366;
+    /* azul escuro */
+    color: white;
+    /* texto branco */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 720px;
+
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer iframe {
+    width: 100%;
+    height: 60%;
+}
+
+.footer-payment {
+    border: 2px black;
+    border-radius: 30px;
+    background-color: #29abe2;
+    display: flex;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-payment img {
+    max-width: 150px;
+    margin: 10px;
+}
+
+
+.footer-payment h3 {
+    align-content: center;
+    margin-top: 0;
+}
+
+
+
+.rodape {
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.carousel {
+    position: relative;
+    width: 800px; /* Definido como 300px */
+    height: 420px; /* Definido como 200px */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 30px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Garante que a altura das imagens preencha o contêiner */
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 1s;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.indicator {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(58, 46, 46, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: rgb(243, 178, 0);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .carousel {
+        width: 90%;
+    }
+
+    .indicator {
+        width: 15px;
+        height: 15px;
+    }
+}

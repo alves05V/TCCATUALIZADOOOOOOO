@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mercadobarbosa.com.br</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../CCSS/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../imagens/rodape/B E ICONS.png" alt="Logo">
+        <div class="search-bar">
+            <input type="text" id="searchInput" oninput="searchProducts()" placeholder="Pesquisar produtos...">
+            <a href="#" style="color: white; margin-left: 15px;"><i class="fas fa-user"></i></a>
+            <div class="cart-dropdown" style="color: white; margin-left: 15px;">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-dropdown-content" id="cart-content">
+                    <!-- Items adicionados ao carrinho aparecerão aqui -->
+                </div>
+                <div class="cart-total" id="cart-total">Total: R$ 0,00</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="nav">
+
+        <div class="dropdown">
+            <a href="#" style="margin-left: 50px;">Todos Departamentos <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../index.html">Página Inicial</a>
+                <a href="./Adega e bebidas.html e bebidas.html">Bebidas</a>
+                <a href="./Alimento.html">Alimentos Básicos</a>
+                <a href="./hortifruit.html">Hortifruti</a>
+                <a href="./higiene.html">Higiene/Produtos de Limpeza</a>
+            </div>
+        </div>
+        <button class="whatsapp-button" onclick="sendWhatsAppMessage()">Enviar pedido via WhatsApp</button>
+    </div>
+    <div class="content">
+        <!-- Seção de produtos - Vegetais -->
+        <div class="product-section">
+            <h2>Guloseimas</h2>
+            <!--CIMA-->
+            <div class="product-area">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/fini.jpeg" alt="Cenoura">
+                        <h3>Fini Amora</h3>
+                        <p>Bala Fini 15g</p>
+                        <p>R$1,10</p>
+                        <button onclick="addToCart('Fini Amora', 1.10)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/finibeijo.jpeg" alt="Cenoura">
+                        <h3>Fini Beijo</h3>
+                        <p>Bala Fini 15g</p>
+                        <p>R$ 1,10</p>
+                        <button onclick="addToCart('Fini Beijo', 1.10)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/finidentadura.jpeg" alt="Cenoura">
+                        <h3>Fini Dentadura</h3>
+                        <p>Bala Fini 15g</p>
+                        <p>R$ 1,10</p>
+                        <button onclick="addToCart('Fini Dentadura', 1.10)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/bisbranco.jpg" alt="Cenoura">
+                        <h3>Bis Branco</h3>
+                        <p>Chocolate Branco 100,8g</p>
+                        <p>R$ 7,00</p>
+                        <button onclick="addToCart('Bis Branco', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/bis chocolate.jpeg" alt="Cenoura">
+                        <h3>Bis Tradicional</h3>
+                        <p>Chocolate ao leite 100,8g</p>
+                        <p>R$ 7,00</p>
+                        <button onclick="addToCart('Bis Tradicional', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/bis-xtra-oreo-45g-1.webp" alt="Cenoura">
+                        <h3>Bis Xtra Oreo</h3>
+                        <p>45g</p>
+                        <p>R$ 2.99</p>
+                        <button onclick="addToCart('Bis Xtra Oreo', 2.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/bis-xtra-ao-leite-45g-1.webp" alt="Cenoura">
+                        <h3>Bis Xtra Ao Leite 45g</h3>
+                        <p>45g</p>
+                        <p>R$ 2,99</p>
+                        <button onclick="addToCart('Bis Xtra Ao Leite', 2.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/bis-xtra-black-45g-1.webp" alt="Cenoura">
+                        <h3>Bis Xtra Black</h3>
+                        <p>45g</p>
+                        <p>R$ 2.99</p>
+                        <button onclick="addToCart('Bis Xtra Black', 2.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/chocolate-lacta-intense-amargo-60--cacau-original-85g-1.webp"
+                            alt="Cenoura">
+                        <h3>Chocolate Lacta</h3>
+                        <p>Cacau Amargo 60% 85g</p>
+                        <p>R$ 9,99</p>
+                        <button onclick="addToCart('Chocolate Lacta Intense Amargo 60%', 9.99)">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/Chocolate Lacta, Shot, 80g, 2420, Kraft - PT 1 UN.jpg"
+                            alt="Cenoura">
+                        <h3>Lacta Shot</h3>
+                        <p>Chocolate ao leite 80g</p>
+                        <p>R$ 7,00</p>
+                        <button onclick="addToCart('Cenoura', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/hersey branco.jpg" alt="Cenoura">
+                        <h3>Hershey´s Branco</h3>
+                        <p>Chocolate Branco 77g</p>
+                        <p>R$ 7,00</p>
+                        <button onclick="addToCart('Hershey´s Branco', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/chocolate-snickers-45g-1.webp" alt="Cenoura">
+                        <h3>SNICKERS Chocolate</h3>
+                        <p>45g</p>
+                        <p>R$ 4,99</p>
+                        <button onclick="addToCart('SNICKERS Chocolate', 4.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/wafer-recheado-nutella-b-ready-22g-1.webp" alt="Cenoura">
+                        <h3>Wafer Nutella</h3>
+                        <p>Recheado B-Ready 22g</p>
+                        <p>R$ 4,29</p>
+                        <button onclick="addToCart('WaferRecheado Nutella', 4.29)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/choc-tab-hersheys-73-cacau-trad-85g-1.webp" alt="Cenoura">
+                        <h3>Chocolate Amargo 73% </h3>
+                        <p>Cacau Special Dark 85g</p>
+                        <p>R$ 7.00</p>
+                        <button onclick="addToCart('Bis Oreo', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/tortuguita.jpeg" alt="Cenoura">
+                        <h3>Tortuguita Chocolate </h3>
+                        <p>85 g</p>
+                        <p>R$ 2,79</p>
+                        <button onclick="addToCart('Bis Xtra Oreo', 2.79)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/goloseimas/trento mousse maracuja.jpeg" alt="Cenoura">
+                        <h3>Chocolate Trento</h3>
+                        <p>(Maracujá)45g</p>
+                        <p>R$ 2.99</p>
+                        <button onclick="addToCart('Chocolate trento(Maracujá)', 2.99)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!--CIMA-->
+                    <div class="product-area">
+                        <div class="product-row">
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/sucrilhos.jpeg" alt="Cenoura">
+                                <h3>Sucrilhos Kellogg's</h3>
+                                <p>1KG</p>
+                                <p>R$ 31,00</p>
+                                <button onclick="addToCart('Sucrilhos Kellogg\'s 1KG', 31.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/Cereais Nestlé Nescau Em Caixa 770 G.jpg" alt="Cenoura">
+                                <h3>Sucrilhos Nestlé </h3>
+                                <p>Nescau Caixa 770 G</p>
+                                <p>R$ 5,00</p>
+                                <button onclick="addToCart('Sucrilhos Nestlé', 19.99)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/go jelly dentaduras.jpeg" alt="Cenoura">
+                                <h3>Bala de Gelatina</h3>
+                                <p> Go Jelly (Dentes)45g</p>
+                                <p>R$ 5,00</p>
+                                <button onclick="addToCart('Bala de Gelatina Go Jelly (Dentes)', 5.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/go jelly luluca.jpeg" alt="Cenoura">
+                                <h3>Bala de Gelatina </h3>
+                                <p>Go Jelly (Luluca)45g</p>
+                                <p>R$ 5,00</p>
+                                <button onclick="addToCart('Bala de Gelatina Go Jelly (Luluca)', 5.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/go jelly banana.jpeg" alt="Cenoura">
+                                <h3>Bala de Gelatina </h3>
+                                <p>Go Jelly (Banana)45g</p>
+                                <p>R$ 5,00</p>
+                                <button onclick="addToCart('Bala de Gelatina Go Jelly (Banana)', 5.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/go jelly trolls.jpeg" alt="Cenoura">
+                                <h3>Bala de Gelatina </h3>
+                                <p>Go Jelly (Trolls)45g</p>
+                                <p>R$ 5,00</p>
+                                <button onclick="addToCart('Bala de Gelatina Go Jelly (Trolls)', 5.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/go jelly minions .jpeg" alt="Cenoura">
+                                <h3>Bala de Gelatina </h3>
+                                <p>Go Jelly (Minions)45g</p>
+                                <p>R$ 5,00</p>
+                                <button onclick="addToCart('Bala de Gelatina Go Jelly (Minions)', 5.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/cheetos.jpeg" alt="Cenoura">
+                                <h3>Elma Chips Cheetos </h3>
+                                <p>Onda Requeijão 75g</p>
+                                <p>R$ 6,59</p>
+                                <button onclick="addToCart('Cheetos Requeijão 75g', 6.59)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/go jelly hello kitty.jpeg" alt="Cenoura">
+                                <h3>Bala de Gelatina </h3>
+                                <p>Go Jelly (Hello Kitty)45g</p>
+                                <p>R$ 5,00</p>
+                                <button onclick="addToCart('Bala de Gelatina Go Jelly (Hello Kitty)', 5.00)">Adicionar
+                                    ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/snickers dark.jpeg" alt="Cenoura">
+                                <h3>Chocolate Snickers</h3>
+                                <p>(Dark)45g</p>
+                                <p>R$ 3,50</p>
+                                <button onclick="addToCart('Chocolate Snickers (Dark)', 3.50)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/snickers morango.jpeg" alt="Cenoura">
+                                <h3>Chocolate Snickers </h3>
+                                <p>(Morango)45g</p>
+                                <p>R$ 3,50</p>
+                                <button onclick="addToCart('Chocolate Snickers (Morango)', 3.50)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/snickers coco.jpeg" alt="Cenoura">
+                                <h3>Chocolate Snickers </h3>
+                                <p>(Coco)45g</p>
+                                <p>R$ 3,50</p>
+                                <button onclick="addToCart('Chocolate Snickers (Coco)', 3.50)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/snickers limao.jpeg" alt="Cenoura">
+                                <h3>Chocolate Snickers </h3>
+                                <p>(Limão)45g</p>
+                                <p>R$ 3,50</p>
+                                <button onclick="addToCart('Chocolate Snickers (Limão)', 3.50)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/Mars Chocolate Snickers Mousse De Maracujá 42 Gramas.jpg"
+                                    alt="Cenoura">
+                                <h3>Chocolate Snickers </h3>
+                                <p>(Maracuja)45g</p>
+                                <p>R$ 3,50</p>
+                                <button onclick="addToCart('Chocolate Snickers (Maracuja)', 3.50)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/negresco.jpeg" alt="Cenoura">
+                                <h3>Biscoito Recheado</h3>
+                                <p> De Baunilha Negresco 90g</p>
+                                <p>R$ 3,50</p>
+                                <button onclick="addToCart('Chocolate Snickers (Original)', 3.50)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/waffle bauduco chocolate.jpeg" alt="Cenoura">
+                                <h3>Chocolate Snickers </h3>
+                                <p>(Original)45g</p>
+                                <p>R$ 3,50</p>
+                                <button onclick="addToCart('Chocolate Snickers (Original)', 3.50)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento avelã.jpeg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Avela Branco)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Avela Choco Branco)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento torta de limao.jpeg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Torta de Limão)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Torta de Limão)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/fandangos.jpeg" alt="Cenoura">
+                                <h3>Salgadinho de Milho</h3>
+                                <p>Elma Chips Fandangos 60g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Mousse de Maracujá)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento dark.jpeg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Dark)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Dark)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento avela.jpg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Avelãs)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Avelãs)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento duo.jpeg" alt="Cenoura">
+                                <h3>Chocolate Trento (Duo)</h3>
+                                <p>45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Duo)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento creme.jpg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Creme)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Creme)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento branco dark.jpg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Branco - Dark)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Branco - Dark)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento de torta de maçã.jpeg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Torta de Maçã)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Torta de Maçã)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento morango.jpeg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>(Morango)45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Morango)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trento massimo chocolate.jpeg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>Massimo Chocolate45g</p>
+                                <p>R$ 2,70</p>
+                                <button onclick="addToCart('Chocolate Trento (Massimo Chocolate)', 2.70)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/massimo trento.jpg" alt="Cenoura">
+                                <h3>Chocolate Trento </h3>
+                                <p>Branco com Chocolate45g</p>
+                                <p>R$ 2,70</p>
+                                <button
+                                    onclick="addToCart('Chocolate Trento (Massimo Branco com Chocolate)', 2.70)">Adicionar
+                                    ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/caixa de bombom garoto.jpeg" alt="Cenoura">
+                                <h3>Caixa de Bombom </h3>
+                                <p>Garoto 251g</p>
+                                <p>R$ 15,00</p>
+                                <button onclick="addToCart('Caixa de Bombom Nestle', 15.00)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trakinas de morango.jpeg" alt="Cenoura">
+                                <h3>Biscoito Trakina</h3>
+                                <p>Morango 45g</p>
+                                <p>R$ 2,60</p>
+                                <button onclick="addToCart('Biscoito Trakinas(Morango)', 2.60)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/trakinas choco.jpg" alt="Cenoura">
+                                <h3>Biscoito Trakinas</h3>
+                                <p>Chocolate 45g</p>
+                                <p>R$ 2,60</p>
+                                <button onclick="addToCart('Biscoito Trakinas (Chocolate)', 2.60)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/goloseimas/bombom nestle.webp" alt="Cenoura">
+                                <h3>Bombom Nestlé</h3>
+                                <p>Especialidades 251g</p>
+                                <p>R$ 10,99</p>
+                                <button onclick="addToCart('', 10.99)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <main class="rodape">
+                        <div class="footer">
+                            <div class="footer-logo">
+                                <img src="../Footer/B.png" alt="Barbosa">
+                                <p> Mercadinho do Barbosa</p>
+                            </div>
+                            <div class="footer-columns">
+                                <div class="footer-column">
+                                    <h3>Formas de Pagamento:</h3>
+                                    <img src="../Footer/4.png" alt="Cartão de Crédito">
+                                    <img src="../Footer/5.png" alt="Cartão de Débito">
+                                    <img src="../Footer/6.png" alt="Pix">
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-column">
+                                <h3> Nossas Redes Sociais </h3>
+                                <a href="https://www.instagram.com/mercadinho._barbosa/"><img src="../Footer/insta.png"
+                                        alt="Instagram"></a>
+                                <a href="#"><img src="../Footer/2.png" alt="LinkedIn"></a>
+                            </div>
+                            <div class="footer-payment">
+                            </div>
+
+                            <div class="footer-bottom">
+                                <p>© Direitos reservados para os Alunos do IOS 2024 | Heitor Alves | Guilherme Pereira |
+                                    Miguel Froes ©</p>
+                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.825490900554!2d-46.707302323881265!3d-23.646419864724187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ff29401f01%3A0x4a3f6ef895f0119e!2sNURAP!5e0!3m2!1spt-BR!2sbr!4v1719187314681!5m2!1spt-BR!2sbr"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </main>
+
+                    <script src="../script.js"></script>
+</body>
+
+</html>

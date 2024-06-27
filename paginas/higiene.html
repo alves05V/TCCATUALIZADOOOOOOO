@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mercadobarbosa.com.br</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CCSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../imagens/rodape/B E ICONS.png" alt="Logo">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            <a href="#" style="color: white; margin-left: 15px;"><i class="fas fa-user"></i></a>
+            <div class="cart-dropdown" style="color: white; margin-left: 15px;">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-dropdown-content" id="cart-content">
+                    <!-- Items adicionados ao carrinho aparecerão aqui -->
+                </div>
+                <div class="cart-total" id="cart-total">Total: R$ 0,00</div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="nav">
+       
+        <div class="dropdown">
+            <a href="#" style="margin-left: 50px;">Todos Departamentos <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../index.html">Página Inicial</a>
+                <a href="../paginas/Guloseimas.html">Guloseimas</a>
+                <a href="../paginas/Alimento.html">Alimentos Básicos</a>
+                <a href="./hortifruit.html">Hortifruti</a>
+                <a href="./higiene.html">Higiene/Produtos de Limpeza</a>
+                
+            </div>
+        </div>
+         <button class="whatsapp-button" onclick="sendWhatsAppMessage()">Enviar pedido via WhatsApp</button>
+    </div>
+    <div class="content">
+        <!-- Seção de produtos - Vegetais -->
+            <div class="product-section">
+                <h2>Limpeza/Higiene Pessoal</h2>
+                <!--CIMA-->
+                <div class="product-area">
+                    <div class="product-row">
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/Nene.webp" alt="Cenoura">
+                            <h3>Papel Higiênico Neve</h3>
+                            <p> Folha Dupla|  20m 4 Rolos</p>
+                            <p>R$ 10,00/cada</p>
+                            <button onclick="addToCart('Papel Higiênico Neve ', 10.00)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/agua sanitaria ypê.jpeg" alt="Cenoura">
+                            <h3>Água Sanitária Ypê </h3>
+                            <p>Bombona | 5L</p>
+                            <p>R$ 12,50/cada</p>
+                            <button onclick="addToCart('Água Sanitária Ypê ', 12.50)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/Detergente Neutro Ypê.jpeg" alt="Cenoura">
+                            <h3>Detergente Ypê Neutro</h3>
+                            <p>   Ypê Neutro | 500ml/p>
+                            <p>R$ 2,12/cada</p>
+                            <button onclick="addToCart('Detergente Líquido Ypê Neutro', 2.12)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/papel higienico fofinho.jpeg" alt="Cenoura">
+                            <h3>Papel Higiênico Fofinho</h3>
+                            <p>Folha Dupla | 12unid.</p>
+                            <p>R$ 11,99/cada</p>
+                            <button onclick="addToCart('Papel Higiênico Fofinho', 11.99)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/papel higienico personal.jpeg" alt="Cenoura">
+                            <h3>Papel Higiênico Personal</h3>
+                            <p> 16 rolos | Folha Dupla  </p>
+                            <p>R$ 24,81/cada</p>
+                            <button onclick="addToCart('Papel Higiênico Personal', 24.81)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/papel toalha kitchen.jpeg" alt="Cenoura">
+                            <h3>Papel Toalha Kitchen</h3>
+                            <p> 60 folhas | 2 rolosL</p>
+                            <p>R$ 5,00/cada</p>
+                            <button onclick="addToCart('Toalha de Papel Kitchen',5.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                 <!--CIMA-->
+                  <!--BAIXO-->
+                <div class="product-area">
+                    <div class="product-row">
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/Olla.jpg" alt="Cenoura">
+                            <h3>Preservativo Olla </h3>
+                            <p>Efeito Retardante | 3 unid.</p>
+                            <p>R$ 6,45/cada</p>
+                            <button onclick="addToCart('Preservativo Olla Efeito Retardante', 6.45)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/Sensitive Jontex.webp" alt="Cenoura">
+                            <h3> Jontex Sensitive  </h3>
+                            <p>Preservativo | 3 unidades</p>
+                            <p>R$ 9,50/cada</p>
+                            <button onclick="addToCart('Preservativo Jontex Sensitive ', 9.50)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/rexona antibacterial.jpeg " alt="Cenoura">
+                            <h3>Desodorante Rexona </h3>
+                            <p>Antibacterial | Frasco</p>
+                            <p>R$ 16,80,/cada</p>
+                            <button onclick="addToCart('Desodorante Aerossol Rexona Antarctica', 160.80)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/Rexona Fem.webp" alt="Cenoura">
+                            <h3> Rexona Feminino</h3>
+                            <p> Powder Dry | 150ml </p>
+                            <p>R$ 13,99/cada</p>
+                            <button onclick="addToCart('Desodorante Rexona Feminino', 13.99)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/sabao em po omo.jpeg " alt="Cenoura">
+                            <h3>Sabão em Pó Omo </h3>
+                            <p>Lavagem perfeita| 2,4kg</p>
+                            <p>R$ 25,00/cada</p>
+                            <button onclick="addToCart('Detergente em Pó Omo', 25.00)">Adicionar ao Carrinho</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="../imagens/Higiene/sabao em po tixan ype.jpeg" alt="Cenoura">
+                            <h3>Detergente em Pó Tixan</h3>
+                            <p>Champagne | 1kg</p>
+                            <p>R$ 7,49/cada</p>
+                            <button onclick="addToCart('etergente em Pó Tixan', 7.49)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!--BAIXO-->
+            </div>
+            <main class="rodape">
+                <div class="footer">
+                    <div class="footer-logo">
+                        <img src="../Footer/B.png" alt="Barbosa">
+                        <p> Mercadinho do Barbosa</p>
+                    </div>
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>Formas de Pagamento:</h3>
+                            <img src="../Footer/4.png" alt="Cartão de Crédito">
+                            <img src="../Footer/5.png" alt="Cartão de Débito">
+                            <img src="../Footer/6.png" alt="Pix">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3> Nossas Redes Sociais </h3>
+                        <a href="https://www.instagram.com/mercadinho._barbosa/"><img src="../Footer/insta.png"
+                                alt="Instagram"></a>
+                        <a href="#"><img src="../Footer/2.png" alt="LinkedIn"></a>
+                    </div>
+                    <div class="footer-payment">
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>© Direitos reservados para os Alunos do IOS 2024 | Heitor Alves | Guilherme Pereira |
+                            Miguel Froes ©</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.825490900554!2d-46.707302323881265!3d-23.646419864724187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ff29401f01%3A0x4a3f6ef895f0119e!2sNURAP!5e0!3m2!1spt-BR!2sbr!4v1719187314681!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </main>
+            <script src="/scriptt/adega.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

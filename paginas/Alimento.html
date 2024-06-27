@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mercadobarbosa.com.br</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../CCSS/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../imagens/rodape/B E ICONS.png" alt="Logo">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            <a href="#" style="color: white; margin-left: 15px;"><i class="fas fa-user"></i></a>
+            <div class="cart-dropdown" style="color: white; margin-left: 15px;">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-dropdown-content" id="cart-content">
+                    <!-- Items adicionados ao carrinho aparecerão aqui -->
+                </div>
+                <div class="cart-total" id="cart-total">Total: R$ 0,00</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="dropdown">
+            <a href="#" style="margin-left: 50px;">Todos Departamentos <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../index.html">Página Inicial</a>
+                <a href="./Adega e bebidas.html">Bebidas</a>
+                <a href="./Guloseimas.html">Guloseimas</a>
+                <a href="./hortifruit.html">Hortifruti</a>
+                <a href="./higiene.html">Higiene/Produtos de Limpeza</a>
+            </div>
+        </div>
+        <button class="whatsapp-button" onclick="sendWhatsAppMessage()">Enviar pedido via WhatsApp</button>
+    </div>
+    <div class="content">
+        <!-- Seção de produtos - Alimentos Básicos -->
+        <div class="product-section">
+            <h2>Alimentos Básicos</h2>
+            <!-- CIMA -->
+            <div class="product-area">
+                <div class="product-row">
+                    <!-- Produto 1 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Arroz Namorado.jpg" alt="Cenoura">
+                        <h3>Arroz Namorado 5kg</h3>
+                        <p>Arroz Branco | 5kg</p>
+                        <p>R$ 30,00/cada</p>
+                        <button onclick="addToCart('Arroz Namorado 5kg', 30.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 2 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Arroz pateko.png" alt="Cenoura">
+                        <h3>Arroz Patéko 5kg</h3>
+                        <p>Arroz Branco | 5kg</p>
+                        <p>R$ 30,00/cada</p>
+                        <button onclick="addToCart('Arroz Patéko 5kg', 30.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 3 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Prato fino.webp" alt="Cenoura">
+                        <h3>Arroz Prato Fino 5kg</h3>
+                        <p>Arroz Branco | 5kg</p>
+                        <p>R$ 37,00/cada</p>
+                        <button onclick="addToCart('Arroz Prato Fino 5kg', 37.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 4 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Arroz camil.webp" alt="Cenoura">
+                        <h3>Arroz </h3>
+                        <p> Camil 1kg | 1kg</p>
+                        <p>R$ 7,00/cada</p>
+                        <button onclick="addToCart('Arroz Parabolizado Camil 1kg', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 5 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Feijão kicaldo.webp" alt="Cenoura">
+                        <h3>Feijão Kicaldo</h3>
+                        <p>Feijão Carioca | 1kg</p>
+                        <p>R$ 9,00/cada</p>
+                        <button onclick="addToCart('Feijão Kicaldo', 9.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 6 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Liza.webp" alt="Cenoura">
+                        <h3>Óleo Liza</h3>
+                        <p>Óleo de Soja | 900ml</p>
+                        <p>R$ 7,00/cada</p>
+                        <button onclick="addToCart('Óleo de Soja Liza', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 7 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/soya.png" alt="Cenoura">
+                        <h3>Óleo de Soja</h3>
+                        <p>Óleo Soya | 900ml</p>
+                        <p>R$ 7,00/cada</p>
+                        <button onclick="addToCart('Óleo de Soja Soya', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 8 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Açúcar Barar.webp" alt="Cenoura">
+                        <h3>Açúcar Barra</h3>
+                        <p>Açúcar | 1kg</p>
+                        <p>R$ 5,30/cada</p>
+                        <button onclick="addToCart('Açúcar Barra', 5.30)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 9 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Açucar Uniao.webp" alt="Cenoura">
+                        <h3>Açúcar União</h3>
+                        <p>Açúcar | 1kg</p>
+                        <p>R$ 5,30/cada</p>
+                        <button onclick="addToCart('Açúcar União', 5.30)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 10 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Leite Parmalat.png" alt="Cenoura">
+                        <h3>Leite Parmalat</h3>
+                        <p>Leite | 1L</p>
+                        <p>R$ 6,50/cada</p>
+                        <button onclick="addToCart('Leite Parmalat', 6.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 11 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/leite Jussara.webp" alt="Cenoura">
+                        <h3>Leite Jussara </h3>
+                        <p>Leite | 1L</p>
+                        <p>R$ 6,50/cada</p>
+                        <button onclick="addToCart('Leite Jussara Max', 6.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 12 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Cafe pilao.webp" alt="Cenoura">
+                        <h3>Café Pilão 250g</h3>
+                        <p>Café | 250g</p>
+                        <p>R$ 9,00/cada</p>
+                        <button onclick="addToCart('Café Pilão 250g', 9.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 13 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Cafe 3 coracoes.jpg" alt="Cenoura">
+                        <h3>Café 3 Corações </h3>
+                        <p>Café | 250g</p>
+                        <p>R$ 9,00/cada</p>
+                        <button onclick="addToCart('Café 3 Corações 250g', 9.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 14 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Cafe Mellita.webp" alt="Cenoura">
+                        <h3>Café Melitta</h3>
+                        <p>Café | 250g</p>
+                        <p>R$ 9,00/cada</p>
+                        <button onclick="addToCart('Café Melitta 250g', 9.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 15 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Milho quero.webp " alt="Cenoura">
+                        <h3>Milho Quero</h3>
+                        <p>Milho Verde | 170g</p>
+                        <p>R$ 2,50/cada</p>
+                        <button onclick="addToCart('Milho Verde Quero', 2.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 16 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Milho Bonare.jpg" alt="Cenoura">
+                        <h3>Milho Bonare</h3>
+                        <p>Milho Verde | 170g</p>
+                        <p>R$ 2,50/cada</p>
+                        <button onclick="addToCart('Milho Verde Bonare', 2.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 17 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Ervilha Jurema.jpg" alt="Cenoura">
+                        <h3>Ervilha Jurema</h3>
+                        <p>Ervilha | 170g</p>
+                        <p>R$ 2,50/cada</p>
+                        <button onclick="addToCart('Ervilha Jurema', 2.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 18 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Seleta banare.jpg" alt="Cenoura">
+                        <h3>Seleta Bonare</h3>
+                        <p>Seleta | 170g</p>
+                        <p>R$ 2,50/cada</p>
+                        <button onclick="addToCart('Seleta Bonare', 2.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 19 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Sal Cisne.webp" alt="Cenoura">
+                        <h3>Sal Cisne</h3>
+                        <p>Sal Refinado | 1kg</p>
+                        <p>R$ 2,50/cada</p>
+                        <button onclick="addToCart('Sal Refinado Cisne', 2.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Produto 20 -->
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Sal lebre.jpg" alt="Cenoura">
+                        <h3>Sal Lebre</h3>
+                        <p>Sal Marinho | 1kg</p>
+                        <p>R$ 2,50/cada</p>
+                        <button onclick="addToCart('Sal Refinado Cisne', 2.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Farinha de trigo Dona benta.png" alt="Cenoura">
+                        <h3>Farinha de Trigo</h3>
+                        <p> Dona Benta | 1kg</p>
+                        <p>R$ 2,75/cada</p>
+                        <button onclick="addToCart('Farinha de trigo Dona Benta', 2.75)">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Toddy 350g.webp" alt="Cenoura">
+                        <h3>Toddy 370g</h3>
+                        <p> Achocolatado | 370g</p>
+                        <p>R$ 12,75/cada</p>
+                        <button onclick="addToCart('Toddy 370g', 12.75)">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Nescau 670g.webp " alt="Cenoura">
+                        <h3>Nescau 670g</h3>
+                        <p> Achocolatado | 670g </p>
+                        <p>R$ 10,89/cada</p>
+                        <button onclick="addToCart('Nescau', 10.75)">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/alimentos basicos/Ovomaltine  tipo suiço300g.webp" alt="Cenoura">
+                        <h3>Tipo Suiço Ovomaltine</h3>
+                        <p> Ovomaltine | 300g </p>
+                        <p>R$ 20,35/cada</p>
+                        <button onclick="addToCart(' Ovomaltine Tipo Suiço', 12.75)">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <main class="rodape">
+                <div class="footer">
+                    <div class="footer-logo">
+                        <img src="../Footer/B.png" alt="Barbosa">
+                        <p> Mercadinho do Barbosa</p>
+                    </div>
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>Formas de Pagamento:</h3>
+                            <img src="../Footer/4.png" alt="Cartão de Crédito">
+                            <img src="../Footer/5.png" alt="Cartão de Débito">
+                            <img src="../Footer/6.png" alt="Pix">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3> Nossas Redes Sociais </h3>
+                        <a href="https://www.instagram.com/mercadinho._barbosa/"><img src="../Footer/insta.png"
+                                alt="Instagram"></a>
+                        <a href="#"><img src="../Footer/2.png" alt="LinkedIn"></a>
+                    </div>
+                    <div class="footer-payment">
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>© Direitos reservados para os Alunos do IOS 2024 | Heitor Alves | Guilherme Pereira |
+                            Miguel Froes ©</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.825490900554!2d-46.707302323881265!3d-23.646419864724187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ff29401f01%3A0x4a3f6ef895f0119e!2sNURAP!5e0!3m2!1spt-BR!2sbr!4v1719187314681!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </main>
+
+
+            <script src="/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mercadobarbosa.com.br</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CCSS/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../imagens/rodape/B E ICONS.png" alt="Logo">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            <a href="#" style="color: white; margin-left: 15px;"><i class="fas fa-user"></i></a>
+            <div class="cart-dropdown" style="color: white; margin-left: 15px;">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-dropdown-content" id="cart-content">
+                    <!-- Items adicionados ao carrinho aparecerão aqui -->
+                </div>
+                <div class="cart-total" id="cart-total">Total: R$ 0,00</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="nav">
+
+        <div class="dropdown">
+            <a href="#" style="margin-left: 50px;">Todos Departamentos <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../index.html">Página Inicial</a>
+                <a href="./Adega e bebidas.html">Bebidas</a>
+                <a href="./Guloseimas.html">Guloseimas</a>
+                <a href="./Alimento.html">Alimentos Básicos</a>
+                <a href="./hortifruit.html">Hortifruti</a>
+                <a href="./higiene.html">Higiene/Produtos de Limpeza</a>
+            </div>
+        </div>
+        <button class="whatsapp-button" onclick="sendWhatsAppMessage()">Enviar pedido via WhatsApp</button>
+    </div>
+    <div class="content">
+        <!-- Seção de produtos - Vegetais -->
+        <div class="product-section">
+            <h2>Bebidas Gerais</h2>
+            <!--CIMA-->
+            <div class="product-area">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/coca cola 2litros.jpeg" alt="Cenoura">
+                        <h3>Coca-Cola</h3>
+                        <p>Tradicional | 2L</p>
+                        <p>R$ 12,00/cada</p>
+                        <button onclick="addToCart('Coca-Cola', 12.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/sukitaa.webp" alt="Cenoura">
+                        <h3>Sukita Tubaina</h3>
+                        <p>Sabor Tubaina | 2L</p>
+                        <p>R$ 6,50/cada</p>
+                        <button onclick="addToCart('Sukita Tubaina', 6.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/soda.jpeg" alt="Cenoura">
+                        <h3>Soda</h3>
+                        <p>Soda | 2L</p>
+                        <p>R$ 7,00/cada</p>
+                        <button onclick="addToCart('Soda', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/kuat.jpg" alt="Cenoura">
+                        <h3>Kuat</h3>
+                        <p>Kuat | 2L</p>
+                        <p>R$ 7,00/cada</p>
+                        <button onclick="addToCart('Kuat', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/saaaboraki.jpg" alt="Cenoura">
+                        <h3>Saboraki</h3>
+                        <p>Saboraki | 2L</p>
+                        <p>R$ 6,00/cada</p>
+                        <button onclick="addToCart('Saboraki', 6.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/CervejaSkolPilsenLata350ml1.webp" alt="Cenoura">
+                        <h3>Cerveja Skol</h3>
+                        <p>Bebida Álcoolica | 350ml</p>
+                        <p>R$ 4,00/cada</p>
+                        <button onclick="addToCart('Cerveja Skol', 4.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/heineken.webp" alt="Cenoura">
+                        <h3>Heineken</h3>
+                        <p>Bebida Álcoolica | 500ml</p>
+                        <p>R$ 7,50/cada</p>
+                        <button onclick="addToCart('Heineken', 7.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/https___superpao.vtexassets.com_arquivos_ids_435323_Bebida-Coquetel-Alcoolico-Blueberry-Corote-Garrafa-500Ml.jpg_v=638481889567570000"
+                            alt="Cenoura">
+                        <h3>Coquetel Blueberry</h3>
+                        <p>Bebida Álcoolica | 500ml</p>
+                        <p>R$ 6,00/cada</p>
+                        <button onclick="addToCart('Coquetel Blueberry', 6.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/Dolly.jpeg" alt="Cenoura">
+                        <h3>Dolly</h3>
+                        <p>Dolly | 2L</p>
+                        <p>R$ 6,50/cada</p>
+                        <button onclick="addToCart('Dolly', 6.50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/Fanta _5L.jpeg" alt="Cenoura">
+                        <h3>Fanta</h3>
+                        <p>Sabor Laranja | 2L</p>
+                        <p>R$ 10,00/cada</p>
+                        <button onclick="addToCart('Fanta', 10.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/Refrigerante-Guaraná-Antarctica-2l.jpg" alt="Cenoura">
+                        <h3>Guaraná Antarctica</h3>
+                        <p>Guaraná | 2L</p>
+                        <p>R$ 10,00/cada</p>
+                        <button onclick="addToCart('Guaraná Antarctica', 10.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/RefrigerantePepsiBlackPet15L1.webp" alt="Cenoura">
+                        <h3>Pepsi Black</h3>
+                        <p>Pepsi | 2L</p>
+                        <p>R$ 7,00/cada</p>
+                        <button onclick="addToCart('Pepsi', 7.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/aguaminalba.webp" alt="Cenoura">
+                        <h3>Água Minalba</h3>
+                        <p>Água Mineral | 1,5L</p>
+                        <p>R$ 5,00/cada</p>
+                        <button onclick="addToCart('Água Minalba',5.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/refrigerante-schweppes-citrus-lata-com-350ml_19415.webp"
+                            alt="Cenoura">
+                        <h3>Schweppes</h3>
+                        <p>Schweppes | 350ml</p>
+                        <p>R$ 6,00/cada</p>
+                        <button onclick="addToCart('Schweppes', 6.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/refrigerante_xereta_2l_guarana_framboesa_332a9a17-19b5-4a29-ac89-d885c3323e7b.jpg"
+                            alt="Cenoura">
+                        <h3>Xereta</h3>
+                        <p>Sabor Framboesa | 2L</p>
+                        <p>R$ 6,00/cada</p>
+                        <button onclick="addToCart('Xereta', 6.00)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="../imagens/bebidas/guaranajesus.webp" alt="Cenoura">
+                        <h3>Guaraná Jesus</h3>
+                        <p>Guaraná | 220ml</p>
+                        <p>R$ 5,00/cada</p>
+                        <button onclick="addToCart('Guaraná Jesus', 5.00)">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <!--CIMA-->
+                    <!--BAIXO-->
+                    <div class="product-area">
+                        <div class="product-row">
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/1012043_refri-h2o-500ml-4646_m1_636501534451518794.jpg"
+                                    alt="Cenoura">
+                                <h3>H2O</h3>
+                                <p>H2O | 500ml</p>
+                                <p>R$ 6,00/cada</p>
+                                <button onclick="addToCart('H2O', 6.00)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/gatoradee.webp" alt="Cenoura">
+                                <h3>Gatorade </h3>
+                                <p>Sabor Morango | 500ml</p>
+                                <p>R$ 5,50/cada</p>
+                                <button onclick="addToCart('Gatorade', 2.00)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/sprite.webp" alt="Cenoura">
+                                <h3>Sprite</h3>
+                                <p>Sprite | 2L</p>
+                                <p>R$ 8,50/cada</p>
+                                <button onclick="addToCart('Sprite', 8.50)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/iceeeee.jfif" alt="Cenoura">
+                                <h3>Ice</h3>
+                                <p>Ice | 275ml </p>
+                                <p>R$ 8,90/cada</p>
+                                <button onclick="addToCart('Ice', 8.90)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/vinho-aurora-varietal-cabernet-sauvignon-750-ml.webp"
+                                    alt="Cenoura">
+                                <h3>Vinho Aurora</h3>
+                                <p>Vinho | 500ml</p>
+                                <p>R$ 42,00/cada</p>
+                                <button onclick="addToCart('Vinho Aurora', 42.00)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/veuve-clicquot-brut_450x600+fill_ffffff.png" alt="Cenoura">
+                                <h3>Veuve Clicquot</h3>
+                                <p>Champagne | 750ml</p>
+                                <p>R$ 400,00/cada</p>
+                                <button onclick="addToCart('Veuve Clicquot', 400.00)">Adicionar ao Carrinho</button>
+                            </div>
+
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/stella.webp" alt="Cenoura">
+                                <h3>Stella Artois</h3>
+                                <p>Bebida Álcoolica | 600ml</p>
+                                <p>R$ 8,99/cada</p>
+                                <button onclick="addToCart('Stella Artois', 8.99)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/balyenergetico.webp" alt="Cenoura">
+                                <h3>Baly Energético </h3>
+                                <p>Sabor Melancia | 2L</p>
+                                <p>R$ 14,99/cada</p>
+                                <button onclick="addToCart('Baly Energético', 14.99)">Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/Energetico-Red-Bull-Sugar-Free-250ml-1.png" alt="Cenoura">
+                                <h3>Red Bull Sugar Free</h3>
+                                <p>Sem Açúcar | 250ml</p>
+                                <p>R$ 8,59/cada</p>
+                                <button onclick="addToCart('Red Energetico Sugar Free', 8.59)">Adicionar ao
+                                    Carrinho</button>
+                            </div>
+                            <div class="product-item">
+                                <img src="../imagens/bebidas/whisky-jack-daniels-old-no-7-1l.png" alt="Cenoura">
+                                <h3>Jack Daniels</h3>
+                                <p>Whisky | 1L</p>
+                                <p>R$ 140,00/cada</p>
+                                <button onclick="addToCart('Jack Daniels', 140.00)">Adicionar ao Carrinho</button>
+                            </div>
+                            <!--BAIXO-->
+                        </div>
+                        <script src="../script.js"></script>
+</body>
+
+</html>
