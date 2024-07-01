@@ -141,6 +141,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 h1,
@@ -432,19 +433,20 @@ p {
 
 .carousel {
     position: relative;
-    width: 800px; /* Definido como 300px */
+    width: 1200px; /* Definido como 300px */
     height: 420px; /* Definido como 200px */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     margin: auto;
     margin-top: 30px;
+    
 }
 
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 100%; /* Garante que a altura das imagens preencha o contêiner */
+    height: 120%; /* preenche a imagem do conteiner */
 }
 
 .carousel-item {
@@ -481,10 +483,11 @@ p {
     background-color: rgb(243, 178, 0);
 }
 
-/* Responsividade para dispositivos móveis */
+/* Responsividade para celulares */
 @media (max-width: 768px) {
     .carousel {
         width: 90%;
+        height: 30vh;
     }
 
     .indicator {
