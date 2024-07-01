@@ -183,7 +183,7 @@ p {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    /* Aumentei a margem direita para dar mais espaço */
+    /* Aumentei a margem direita para dar mais espaço ajsutado */
 }
 
 .search-bar input {
@@ -192,7 +192,7 @@ p {
     border-radius: 4px;
     margin-right: 10px;
     width: 300px;
-    /* Aumentei a largura para dar mais espaço para a pesquisa */
+    /* Aumentei a largura para dar mais espaço para a pesquisaa ajustado */
 }
 
 .search-bar button {
